@@ -82,6 +82,9 @@ export default class RestClient {
 			},
 			responseType: 'arraybuffer'
 		};
-		return fetch(`${this.baseUrl}${endpoint}?${queryString.stringify(data)}`, config);
+		return fetch(
+			`${this.baseUrl}${endpoint}?${queryString.stringify(data)}`,
+			config
+		);
 	}
 }
